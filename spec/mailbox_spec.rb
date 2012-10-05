@@ -33,7 +33,7 @@ describe "A Gmail mailbox" do
         mailbox.emails(:all, :from => message.from.first.name) == message.from.first.name
       end
     end
-    
+
     it "should be able to do a full text search of message bodies" do
       pending "This can wait..."
       #mock_mailbox do |mailbox|

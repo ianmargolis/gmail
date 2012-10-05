@@ -2,7 +2,7 @@ module Gmail
   module Client
     class Plain < Base
       attr_reader :password
-      
+
       def initialize(username, password, options={})
         @password = password
         super(username, options)

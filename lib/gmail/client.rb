@@ -1,10 +1,10 @@
 module Gmail
   module Client
-    # Raised when connection with GMail IMAP service couldn't be established. 
+    # Raised when connection with GMail IMAP service couldn't be established.
     class ConnectionError < SocketError; end
     # Raised when given username or password are invalid.
     class AuthorizationError < Net::IMAP::NoResponseError; end
-    # Raised when delivered email is invalid. 
+    # Raised when delivered email is invalid.
     class DeliveryError < ArgumentError; end
     # Raised when given client is not registered
     class UnknownClient < ArgumentError; end
@@ -18,7 +18,7 @@ module Gmail
       if client = @clients[name]
         client.new(*args)
       else
-        raise UnknownClient, "No such client: #{name}" 
+        raise UnknownClient, "No such client: #{name}"
       end
     end
 
