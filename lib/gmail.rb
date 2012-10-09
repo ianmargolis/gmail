@@ -41,7 +41,7 @@ module Gmail
     #
     #   Gmail.new("foo@gmail.com", "password") do |client|
     #     # ...
-    #   end
+    #   end 
     #
 
     ['', '!'].each { |kind|
